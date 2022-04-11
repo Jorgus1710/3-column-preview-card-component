@@ -1,0 +1,239 @@
+
+
+
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    height: 100vh;
+}
+
+
+main {
+    display: flex;
+    /* justify-content: center; */
+    
+    /* align-items: center; */
+    /* margin: 0px auto; */
+}
+
+.card-wrapper {
+    margin: 90px 25px;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%)
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+}
+
+
+img {
+    padding-top: 55px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    width: 65px;
+}
+
+h2 {
+    text-transform: uppercase;
+    padding-left: 50px;
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 40px;
+}
+
+p {
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 40px;
+    line-height: 1.6;
+    color: hsla(0, 0%, 100%, 0.75);
+    letter-spacing: .5px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 53px;
+    margin-bottom: 50px;
+    
+    
+    padding: 17px 35px;
+    text-decoration: none;
+    color: hsl(179, 100%, 13%);
+    background-color: white;
+    background-color: none;
+    border-radius: 50px;
+
+    border: solid transparent 3px;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+
+.btn:hover {
+    border: solid green 3px;
+    color: white;
+    /* background-color: rgba(red, green, blue, 0%); */
+    
+}
+
+
+a {
+    /* background-color: none; */
+}
+
+.sedans .btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs .btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury .btn {
+    color: hsl(179, 100%, 13%);
+}
+
+
+
+@media all and (min-width: 376px) {
+
+
+    main {
+        /* display: 100vh; */
+        display: flex;
+        justify-content: center;
+        margin-top: -22px;
+    }
+
+
+    .card-wrapper {
+        max-width: 500px;
+        transform: scale(.77);
+        
+    }
+
+    .suvs .btn:hover {
+        border: solid white 3px;
+        color: white;
+        background-color: hsl(184, 100%, 22%);
+    }
+
+    .sedans .btn:hover {
+        border: solid white 3px;
+        color: white;
+        background-color: hsl(31, 77%, 52%);
+    }
+
+    .luxury .btn:hover {
+        border: solid white 3px;
+        color: white;
+        background-color: hsl(179, 100%, 13%);
+    }
+
+}
+
+
+
+
+@media all and (min-width: 1150px) {
+    
+    body {
+        
+    }
+
+    main {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+    }
+
+
+    .card-wrapper {
+        display: flex;
+        /* align-items: center;  */
+        /* justify-content: center; */
+        min-height: 650px;
+        margin: 0;
+
+        max-width: none;
+    }
+
+
+    .cards {
+        max-width: 400px;
+        min-height: 550px;
+    }
+
+
+    .sedans {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .luxury {
+        border-radius: 0 10px 10px 0;
+    }
+
+
+
+    img {
+        padding-top: 65px;
+        padding-left: 65px;
+        padding-bottom: 50px;
+        width: 85px;
+    }
+
+
+    h2 {
+        text-transform: uppercase;
+        padding-left: 65px;
+        font-family: 'Big Shoulders Display', cursive;
+        color: hsl(0, 0%, 95%);
+        font-size: 50px;
+    }
+
+
+
+    p {
+        padding-top: 35px;
+        padding-left: 65px;
+        padding-right: 40px;
+        line-height: 1.6;
+        color: hsla(0, 0%, 100%, 0.75);
+        letter-spacing: .5px;
+        font-size: 20px;
+    }
+
+    .btn {
+        /* display: inline-block; */
+        margin-top: 110px;
+        margin-left: 65px;
+        margin-bottom: 0px;
+        
+        
+        padding: 20px 42px;
+        text-decoration: none;
+        color: hsl(179, 100%, 13%);
+        background-color: white;
+        border-radius: 50px;
+
+        font-size: 18px;
+    }
+
+
+
+}
